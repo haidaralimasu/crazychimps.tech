@@ -18,7 +18,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between py-3 md:py-5 md:block">
           <Link className="open_banana" to="/">
             <div>
-              <img src={logo} width={50} height={50} alt="Myths Dao Logo" />
+              <img src={logo} width={50} height={50} alt="Crazy Chimps Logo" />
             </div>
           </Link>
           <div className="md:hidden">
@@ -28,6 +28,7 @@ const Navbar = () => {
             >
               {state ? (
                 <svg
+                  className="open_banana"
                   width="40"
                   height="40"
                   viewBox="0 0 200 200"
@@ -146,17 +147,18 @@ const Navbar = () => {
             </button>
           </div>
         </div>
+
         <div
           className={`flex-1 justify-self-center pb-3 mt-8  md:block md:pb-0 md:mt-0 ${
             state ? "block" : "hidden"
           }`}
         >
-          <ul className="justify-center items-center space-y-8 md:flex  md:space-x-6 md:space-y-0">
+          <ul className="justify-center items-center ease-in-out duration-300 space-y-8 md:flex  md:space-x-6 md:space-y-0">
             {navigation.map((item, idx) => {
               return (
                 <li key={idx} className="text-black monkey">
                   <Link
-                    className="monkey hover:text-btnbrown  open_banana ease-in-out duration-300 "
+                    className="monkey text-btnbrown hover:underline hover:ease-in-out duration-300 underline-offset-8 text-md  open_banana ease-in-out duration-300 "
                     to={item.path}
                   >
                     {item.title}
@@ -169,7 +171,7 @@ const Navbar = () => {
         <div className="hidden md:inline-block">
           <Link
             to="/playground"
-            className="py-3 px-4 text-white bg-btnbrown monkey hover:bg-btnbrown-800 open_banana rounded-md shadow"
+            className="py-3 px-4 text-white bg-btnbrown monkey hover:bg-btnyellow hover:text-btnbrown hover:ease-in-out duration-300 open_banana rounded-md shadow"
           >
             Explore More
           </Link>

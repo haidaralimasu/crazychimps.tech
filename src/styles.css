@@ -5,7 +5,8 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Happy+Monkey&display=swap");
 
 * {
-  font-family: "DM Sans", sans-serif;
+  /* font-family: "DM Sans", sans-serif; */
+  font-family: "Happy Monkey", cursive;
 }
 .monkey {
   font-family: "Happy Monkey", cursive;
@@ -28,6 +29,17 @@
   cursor: -webkit-image-set(
         url("./assets/cursour/open_banana.svg") 7x,
         url("./assets/cursour/open_banana.svg") 7x
+      )
+      0 0,
+    pointer; /* Webkit */
+}
+
+.text_cur {
+  cursor: url("./assets/cursour/xterm.svg") 0 0, pointer; /* Legacy */
+  cursor: url("./assets/cursour/xterm.svg") 0 0, pointer; /* FF */
+  cursor: -webkit-image-set(
+        url("./assets/cursour/xterm.svg") 5x,
+        url("./assets/cursour/xterm.svg") 5x
       )
       0 0,
     pointer; /* Webkit */
