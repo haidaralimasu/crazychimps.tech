@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import heroImg from "../../assets/logo.png";
-import rotate from "../../assets/left_ptr_watch.svg";
+import heroImg from "../../assets/monkey.png";
 
 const HeroSection = () => {
   return (
