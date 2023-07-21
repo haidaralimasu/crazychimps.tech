@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Happy+Monkey&display=swap");
+
+* {
+  font-family: "DM Sans", sans-serif;
+}
+.monkey {
+  font-family: "Happy Monkey", cursive;
+}
+
+.close_banana {
+  cursor: url("./assets/cursour/close_banana.svg") 0 0, pointer; /* Legacy */
+  cursor: url("./assets/cursour/close_banana.svg") 0 0, pointer; /* FF */
+  cursor: -webkit-image-set(
+        url("./assets/cursour/close_banana.svg") 7x,
+        url("./assets/cursour/close_banana.svg") 7x
+      )
+      0 0,
+    pointer; /* Webkit */
+}
+
+.open_banana {
+  cursor: url("./assets/cursour/open_banana.svg") 0 0, pointer; /* Legacy */
+  cursor: url("./assets/cursour/open_banana.svg") 0 0, pointer; /* FF */
+  cursor: -webkit-image-set(
+        url("./assets/cursour/open_banana.svg") 7x,
+        url("./assets/cursour/open_banana.svg") 7x
+      )
+      0 0,
+    pointer; /* Webkit */
+}
