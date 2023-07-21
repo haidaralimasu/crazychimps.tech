@@ -107,19 +107,16 @@ const Footer = () => {
               <label className="block pt-4 pb-2 close_banana">
                 Stay up to date
               </label>
-              <div className="max-w-sm flex items-center border border-btnbrown rounded-md p-1">
+              <div className="max-w-sm flex items-center border border-btnbrown  rounded-md p-1">
                 <input
                   // onChange={(e) => {
                   //   setEmail(e.target.value);
                   // }}
                   type="email"
                   placeholder="Enter your email"
-                  className="w-full bg-primaryyellow border border-btnbrown placeholder-btnbrown p-2.5 outline-none py-3 px-4 rounded-md shadow mr-1 text_cur"
+                  className="w-full border-b-4 border-l-4 bg-primaryyellow border border-btnbrown placeholder-btnbrown p-2.5 outline-none py-3 px-4 rounded-md shadow mr-1 text_cur"
                 />
-                <button
-                  // onClick={() => validateEmail(email)}
-                  className="py-3 px-4 text-white bg-btnbrown monkey hover:bg-btnyellow hover:text-btnbrown hover:ease-in-out duration-300 open_banana rounded-md shadow"
-                >
+                <button className="flex items-center border-btnbrown border-b-4 border-l-4 open_banana justify-center gap-x-2 py-3 px-4 text-btnbrown bg-btnyellow  hover:border-t-4 hover:border-r-4  hover:border-b-0 hover:border-l-0 hover:ease-in-out duration-300 font-medium duration-150 active:bg-gray-100 border rounded-md md:inline-flex">
                   Subscribe
                 </button>
               </div>
@@ -145,8 +142,8 @@ const Footer = () => {
             ))}
           </div>
         </div>
-        <div className="mt-8 py-6 border-t border-btnbrown items-center justify-center sm:flex">
-          <div className="mt-4 sm:mt-0">
+        <div className="mt-8 py-6 border-t  border-btnbrown items-center justify-center sm:flex">
+          <div className="mt-4 sm:mt-0 three_h">
             &copy; 2023 Crazy Chimps Technologies All rights reserved.
           </div>
         </div>

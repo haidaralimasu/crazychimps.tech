@@ -34,7 +34,7 @@
     pointer; /* Webkit */
 }
 
-.text_cur {
+input {
   cursor: url("./assets/cursour/xterm.svg") 0 0, pointer; /* Legacy */
   cursor: url("./assets/cursour/xterm.svg") 0 0, pointer; /* FF */
   cursor: -webkit-image-set(
