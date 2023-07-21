@@ -118,14 +118,14 @@ const Footer = () => {
                 />
                 <button
                   // onClick={() => validateEmail(email)}
-                  className="py-3 px-4 text-white bg-btnbrown monkey hover:bg-btnyellow hover:text-btnbrown hover:ease-in-out duration-300 open_banana rounded-md shadow"
+                  className="py-3 px-4  text-white bg-btnbrown monkey hover:bg-btnyellow hover:text-btnbrown hover:ease-in-out duration-300 open_banana rounded-md shadow"
                 >
                   Subscribe
                 </button>
               </div>
             </form>
           </div>
-          <div className="flex-1 mt-10 space-y-6 items-center justify-between sm:flex md:space-y-0 md:mt-0">
+          <div className="flex-1 display-flex mt-10 space-y-6 items-center justify-between sm:flex md:space-y-0 md:mt-0">
             {footerNavs.map((item, idx) => (
               <ul className="space-y-4" key={idx}>
                 <h4 className="text-btnbrown underline underline-offset-8 font-medium">
@@ -135,7 +135,7 @@ const Footer = () => {
                   <li key={idx}>
                     <Link
                       to={el.href}
-                      className="hover:underline text-btnbrown hover:text-btnbrown open_banana"
+                      className="hover:underline text-btnbrown hover:text-btnbrown"
                     >
                       {el.name}
                     </Link>

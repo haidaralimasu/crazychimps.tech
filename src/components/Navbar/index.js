@@ -23,7 +23,7 @@ const Navbar = () => {
           </Link>
           <div className="md:hidden">
             <button
-              className="text-gray-700 outline-none p-2 rounded-md focus:border-gray-400 focus:border"
+              className="text-gray-700 outline-none p-2 rounded-md"
               onClick={() => setState(!state)}
             >
               {state ? (
@@ -168,10 +168,10 @@ const Navbar = () => {
             })}
           </ul>
         </div>
-        <div className="hidden md:inline-block">
+        <div className="hidden md:inline-block border-primaryyellow hover:border-btnbrown">
           <Link
-            to="/playground"
-            className="py-3 px-4 text-white bg-btnbrown monkey hover:bg-btnyellow hover:text-btnbrown hover:ease-in-out duration-300 open_banana rounded-md shadow"
+            to="/"
+            className="flex items-center border-btnbrown border-b-4 border-l-4 open_banana justify-center gap-x-2 py-3 px-4 text-btnbrown bg-btnyellow  hover:border-t-4 hover:border-r-4  hover:border-b-0 hover:border-l-0 hover:ease-in-out duration-300 font-medium duration-150 active:bg-gray-100 border rounded-md md:inline-flex"
           >
             Explore More
           </Link>

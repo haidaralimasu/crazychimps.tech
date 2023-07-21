@@ -3,7 +3,7 @@ import AppRouter from "./router";
 
 const App = () => {
   return (
-    <div>
+    <div className="close_banana">
       <AppRouter />
     </div>
   );
