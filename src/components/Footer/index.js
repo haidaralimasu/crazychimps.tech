@@ -118,7 +118,7 @@ const Footer = () => {
                 />
                 <button
                   // onClick={() => validateEmail(email)}
-                  className="py-3 px-4  text-white bg-btnbrown monkey hover:bg-btnyellow hover:text-btnbrown hover:ease-in-out duration-300 open_banana rounded-md shadow"
+                  className="py-3 px-4 text-white bg-btnbrown monkey hover:bg-btnyellow hover:text-btnbrown hover:ease-in-out duration-300 open_banana rounded-md shadow"
                 >
                   Subscribe
                 </button>

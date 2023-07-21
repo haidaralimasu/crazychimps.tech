@@ -9,15 +9,13 @@ const HeroSection = () => {
       <section className="py-20">
         <div className="max-w-screen-xl mx-auto  gap-x-12 items-center justify-between overflow-hidden md:flex md:px-8">
           <div className="flex-none space-y-5 px-4 sm:max-w-lg md:px-0 lg:max-w-xl">
-            <h1 className="text-sm text-btnbrown font-medium">Third Prompt</h1>
-            <h2 className="text-4xl  font-extrabold md:text-5xl">
-              We are Crazy Chimps Technologies
+            <h2 className="text-4xl  font-extrabold md:text-5xl three_h">
+              We are Crazy Chimps Technologies !
             </h2>
             <p>
-              Our innovative prompt-generating wizard is designed to spark your
-              creativity with lightning-fast precision. Simply provide us with
-              your information, and watch as a world of inspiring ideas unfolds
-              before your eyes, ready to be explored.
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
             </p>
             <div className="items-center gap-x-3 space-y-3 sm:flex sm:space-y-0">
               <Link

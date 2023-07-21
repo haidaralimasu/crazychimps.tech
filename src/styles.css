@@ -55,3 +55,51 @@ a {
       0 0,
     pointer; /* Webkit */
 }
+
+.three_h {
+  color: #fcd900;
+  text-shadow: -1px -1px 0 #6e1f58, 1px -1px 0 #6e1f58, -1px 1px 0 #6e1f58,
+    1px 1px 0 #6e1f58, 1px 0px 0px #6d3c1b, 0px 1px 0px #6d3c1b,
+    2px 1px 0px #6d3c1b, 1px 2px 0px #6d3c1b, 3px 2px 0px #6d3c1b,
+    2px 3px 0px #6d3c1b, 4px 3px 0px #6d3c1b, 3px 4px 0px #6d3c1b,
+    5px 4px 0px #6d3c1b, 3px 5px 0px #6e1f58, 6px 5px 0px #6e1f58,
+    -1px 2px 0 black, 0 3px 0 #6e1f58, 1px 4px 0 #6e1f58, 2px 5px 0px #6e1f58,
+    2px -1px 0 #6e1f58, 3px 0 0 #6e1f58, 4px 1px 0 #6e1f58, 5px 2px 0px #6e1f58,
+    6px 3px 0 #6e1f58, 7px 4px 0 #6e1f58, 10px 10px 4px #dac249;
+
+  &:after,
+  &:before {
+    content: attr(data-heading);
+    left: 0;
+    width: 100%;
+    top: 0;
+    z-index: 5;
+  }
+
+  &:before {
+    text-shadow: -1px -1px 0 #9e132c, 1px -1px 0 #9e132c, -1px 1px 0 #9e132c,
+      1px 1px 0 #9e132c, 1px 0px 0px #f5b10b, 0px 1px 0px #f5b10b,
+      2px 1px 0px #f5b10b, 1px 2px 0px #f5b10b, 3px 2px 0px #f5b10b,
+      2px 3px 0px #f5b10b, 4px 3px 0px #f5b10b, 3px 4px 0px #f5b10b,
+      5px 4px 0px #f5b10b, 3px 5px 0px #9e132c, 6px 5px 0px #9e132c,
+      -1px 2px 0 black, 0 3px 0 #9e132c, 1px 4px 0 #9e132c, 2px 5px 0px #9e132c,
+      2px -1px 0 #9e132c, 3px 0 0 #2f3e9c, 4px 1px 0 #9e132c,
+      5px 2px 0px #9e132c, 6px 3px 0 #9e132c, 7px 4px 0 #9e132c,
+      10px 10px 4px rgba(#6af177, 0.8);
+    color: #6d3c1b;
+    height: 66%;
+  }
+
+  &:after {
+    height: 33%;
+    color: #4ad9db;
+    text-shadow: -1px -1px 0 #2f3e9c, 1px -1px 0 #2f3e9c, -1px 1px 0 #2f3e9c,
+      1px 1px 0 #2f3e9c, 1px 0px 0px #fcd900, 0px 1px 0px #fcd900,
+      2px 1px 0px #fcd900, 1px 2px 0px #fcd900, 3px 2px 0px #fcd900,
+      2px 3px 0px #fcd900, 4px 3px 0px #fcd900, 3px 4px 0px #fcd900,
+      5px 4px 0px #fcd900, 3px 5px 0px #2f3e9c, 6px 5px 0px #2f3e9c,
+      -1px 2px 0 black, 0 3px 0 #2f3e9c, 1px 4px 0 #2f3e9c, 2px 5px 0px #2f3e9c,
+      2px -1px 0 #2f3e9c, 3px 0 0 #2f3e9c, 4px 1px 0 #2f3e9c,
+      5px 2px 0px #2f3e9c, 6px 3px 0 #2f3e9c, 7px 4px 0 #2f3e9c;
+  }
+}
