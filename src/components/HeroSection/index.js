@@ -5,7 +5,7 @@ import heroImg from "../../assets/monkey.png";
 const HeroSection = () => {
   return (
     <>
-      <section className="py-20">
+      <section className="pt-20 pb-4">
         <div className="max-w-screen-xl mx-auto  gap-x-12 items-center justify-between overflow-hidden md:flex md:px-8">
           <div className="flex-none space-y-5 px-4 sm:max-w-lg md:px-0 lg:max-w-xl">
             <h2 className="text-4xl  font-extrabold md:text-5xl three_h">

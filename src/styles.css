@@ -33,6 +33,16 @@
       0 0,
     pointer; /* Webkit */
 }
+.qa {
+  cursor: url("./assets/cursour/qa.svg") 0 0, pointer; /* Legacy */
+  cursor: url("./assets/cursour/qa.svg") 0 0, pointer; /* FF */
+  cursor: -webkit-image-set(
+        url("./assets/cursour/qa.svg") 7x,
+        url("./assets/cursour/qa.svg") 7x
+      )
+      0 0,
+    pointer; /* Webkit */
+}
 
 input {
   cursor: url("./assets/cursour/xterm.svg") 0 0, pointer; /* Legacy */
