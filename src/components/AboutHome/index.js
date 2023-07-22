@@ -18,14 +18,16 @@ const AboutHome = () => {
               About Crazy Chimps Technologies
             </p>
             <p className="mt-3 text-btnbrown">
-              Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-              cupidatat non proident, sunt in culpa qui officia deserunt mollit
-              anim id est laborum, sed ut perspiciatis unde omnis iste natus
-              error sit voluptatem accusantium doloremque laudantium
+              Founded with a vision to revolutionize the web3 landscape, we are
+              a forward-thinking company at the forefront of blockchain
+              technology, decentralized applications, and the vast possibilities
+              of the metaverse. Our team of passionate tech enthusiasts and
+              blockchain experts are committed to pushing the boundaries of
+              innovation, unlocking the full potential of web3 solutions to
+              empower individuals and businesses alike.
             </p>
             <Link
-              to="/"
+              to="/about"
               className="flex border-b-4 items-center border-btnbrown border-l-4   open_banana justify-center gap-x-2 py-3 px-4 text-btnbrown bg-btnyellow hover:border-l-0 hover:border-b-0 hover:border-r-4 hover:border-t-4 hover:ease-in-out duration-300 font-medium duration-150 active:bg-gray-100 border rounded-md md:inline-flex"
             >
               Know More

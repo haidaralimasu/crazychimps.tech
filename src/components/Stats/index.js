@@ -3,20 +3,16 @@ import React from "react";
 const Stats = () => {
   const stat = [
     {
-      data: "35K",
-      title: "Customers",
+      data: "60+",
+      title: "Projects Completed",
     },
     {
-      data: "10K+",
-      title: "Downloads",
+      data: "100+",
+      title: "Happy Clients",
     },
     {
-      data: "40+",
-      title: "Countries",
-    },
-    {
-      data: "30M+",
-      title: "Total revenue",
+      data: "5M+",
+      title: "Total Value Added",
     },
   ];
 
@@ -25,12 +21,8 @@ const Stats = () => {
       <div className="max-w-screen-xl mx-auto px-4 md:px-8">
         <div className="max-w-2xl mx-auto text-center">
           <h3 className="three_h text-3xl font-semibold sm:text-4xl">
-            Our customers are always happy
+            Our Clients Are Always Happy {":)"}
           </h3>
-          <p className="mt-3 text-btnbrown">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-            venenatis sollicitudin quam ut tincidunt.
-          </p>
         </div>
         <div className="mt-12">
           <ul className="flex flex-col gap-4 items-center justify-center sm:flex-row">

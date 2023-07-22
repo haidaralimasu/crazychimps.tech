@@ -10,7 +10,7 @@ const FeaturedBlog = () => {
       authorLogo: "https://api.uifaces.co/our-content/donated/xZ4wg2Xj.jpg",
       authorName: "Sidi dev",
       date: "Jan 4 2022",
-      href: "javascript:void(0)",
+      href: "/blog/1",
     },
     {
       title: "A Quick Guide to WordPress Hosting",
@@ -19,7 +19,7 @@ const FeaturedBlog = () => {
       authorLogo: "https://api.uifaces.co/our-content/donated/FJkauyEa.jpg",
       authorName: "Micheal",
       date: "Jan 4 2022",
-      href: "javascript:void(0)",
+      href: "/blog/1",
     },
     {
       title: "7 Promising VS Code Extensions Introduced in 2022",
@@ -28,7 +28,7 @@ const FeaturedBlog = () => {
       authorLogo: "https://randomuser.me/api/portraits/men/46.jpg",
       authorName: "Luis",
       date: "Jan 4 2022",
-      href: "javascript:void(0)",
+      href: "/blog/1",
     },
   ];
 
@@ -37,7 +37,7 @@ const FeaturedBlog = () => {
       <div className="text-center">
         <h1 className="text-3xl  font-semibold three_h">Our Recent Blogs</h1>
         <p className="mt-3 text-btnbrown">
-          Blogs that are loved by the community. Updated every hour.
+          Blogs that are loved by the community. Updated regularly.
         </p>
       </div>
       <div className="mt-12 grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
@@ -46,7 +46,7 @@ const FeaturedBlog = () => {
             className="max-w-md mx-auto mt-4 shadow-lg border-btnbrown border-b-4 border-l-4 border bg-btnyellow hover:border-l-0 hover:border-b-0 hover:border-t-4 hover:border-r-4 rounded-md duration-300 hover:shadow-sm"
             key={key}
           >
-            <a href={items.href}>
+            <Link to={items.href}>
               <img
                 src={items.img}
                 loading="lazy"
@@ -64,7 +64,7 @@ const FeaturedBlog = () => {
                 <h3 className="text-xl text-btnbrown">{items.title}</h3>
                 <p className="text-black text-sm mt-1">{items.desc}</p>
               </div>
-            </a>
+            </Link>
           </article>
         ))}
       </div>

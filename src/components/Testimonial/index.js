@@ -30,7 +30,7 @@ const Testimonial = () => {
       <div className="max-w-screen-xl mx-auto px-4 md:px-8">
         <div className="max-w-xl sm:text-center md:mx-auto">
           <h3 className="three_h text-3xl font-semibold sm:text-4xl">
-            See what others saying about us
+            See What Our Clients Say !
           </h3>
           <p className="mt-3 text-btnbrown">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et est

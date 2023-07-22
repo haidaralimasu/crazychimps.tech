@@ -8,17 +8,18 @@ const HeroSection = () => {
       <section className="py-20">
         <div className="max-w-screen-xl mx-auto  gap-x-12 items-center justify-between overflow-hidden md:flex md:px-8">
           <div className="flex-none space-y-5 px-4 sm:max-w-lg md:px-0 lg:max-w-xl">
-            <h2 className="text-4xl  font-extrabold md:text-5xl three_h">
-              We are Crazy Chimps Technologies !
+            <h2 className="text-4xl   font-extrabold md:text-5xl three_h">
+              Crazy Chimps Tech !
             </h2>
-            <p>
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
+            <p className="text-btnbrown">
+              Embark on an exhilarating journey into the decentralized future
+              with Crazy Chimps Tech - your gateway to next-gen web3 solutions,
+              empowering you with limitless possibilities and revolutionizing
+              the way you interact with the digital world!
             </p>
             <div className="items-center gap-x-3 space-y-3 sm:flex sm:space-y-0">
               <Link
-                to="/"
+                to="/contact"
                 className="flex border-b-4 items-center border-btnbrown border-l-4   open_banana justify-center gap-x-2 py-3 px-4 text-btnbrown bg-btnyellow hover:border-l-0 hover:border-b-0 hover:border-r-4 hover:border-t-4 hover:ease-in-out duration-300 font-medium duration-150 active:bg-gray-100 border rounded-md md:inline-flex"
               >
                 Contact Us
@@ -132,10 +133,10 @@ const HeroSection = () => {
                 </svg>
               </Link>
               <Link
-                to="/"
+                to="/services"
                 className="flex border-b-4 items-center border-btnbrown border-l-4   open_banana justify-center gap-x-2 py-3 px-4 text-btnbrown bg-btnyellow hover:border-l-0 hover:border-b-0 hover:border-r-4 hover:border-t-4 hover:ease-in-out duration-300 font-medium duration-150 active:bg-gray-100 border rounded-md md:inline-flex"
               >
-                Explore Blogs
+                Our Services
                 <svg
                   width="30"
                   height="30"

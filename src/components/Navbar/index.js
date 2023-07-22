@@ -7,8 +7,10 @@ const Navbar = () => {
 
   const navigation = [
     { title: "Home", path: "/" },
-    { title: "Playground", path: "/playground" },
+    { title: "About", path: "/about" },
+    { title: "Services", path: "/services" },
     { title: "Blog", path: "/blog" },
+    { title: "Careers", path: "/careers" },
     { title: "Contact", path: "/contact" },
   ];
 
@@ -173,7 +175,7 @@ const Navbar = () => {
             to="/"
             className="flex items-center border-btnbrown border-b-4 border-l-4 open_banana justify-center gap-x-2 py-3 px-4 text-btnbrown bg-btnyellow  hover:border-t-4 hover:border-r-4  hover:border-b-0 hover:border-l-0 hover:ease-in-out duration-300 font-medium duration-150 active:bg-gray-100 border rounded-md md:inline-flex"
           >
-            Explore More
+            Product !
           </Link>
         </div>
       </div>
