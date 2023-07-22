@@ -49,16 +49,16 @@ const Testimonial = () => {
                   <div className="flex items-center gap-x-4">
                     <img src={item.avatar} className="w-16 h-16 rounded-full" />
                     <div>
-                      <span className="block text-gray-800 font-semibold">
+                      <span className="block text-btnbrown font-semibold">
                         {item.name}
                       </span>
-                      <span className="block text-gray-600 text-sm mt-0.5">
+                      <span className="block text-btnbrown text-sm mt-0.5">
                         {item.title}
                       </span>
                     </div>
                   </div>
                   <blockquote>
-                    <p className="mt-6 text-gray-700">{item.quote}</p>
+                    <p className="mt-6 text-btnbrown">{item.quote}</p>
                   </blockquote>
                 </figure>
               </li>
