@@ -148,12 +148,41 @@ const Service = () => {
     "Iraq",
   ];
 
+  const serviceItems = [
+    "United States of America",
+    "Albania",
+    "Algeria",
+    "Andorra",
+    "Argentina",
+    "Armenia",
+    "Austria",
+    "Australia",
+    "Austria",
+    "Azerbaijan",
+    "Bahamas",
+    "Brazil",
+    "Canada",
+    "Colombia",
+    "China",
+    "Egypt",
+    "France",
+    "Germany",
+    "India",
+    "Iraq",
+  ];
+
   const [selectedItem, setSelectedItem] = useState({
     item: null,
     idx: null,
   });
 
+  const [selectedServiceItem, setSelectedServiceItem] = useState({
+    item: null,
+    idx: null,
+  });
+
   const [state, setState] = useState(false);
+  const [stateOpen, setStateOpen] = useState(false);
 
   const handleSearch = (e) => {
     const menuEls = document.querySelectorAll(".menu-el-js");
@@ -169,7 +198,7 @@ const Service = () => {
 
   return (
     <section className="py-14">
-      <div className="max-w-screen-xl mx-auto px-4 text-gray-600 md:px-8">
+      <div className="max-w-screen-xl mx-auto px-4 text-btnbrown md:px-8">
         <div className="relative max-w-2xl mx-auto sm:text-center">
           <div className="relative z-10">
             <h3 className="three_h text-3xl font-semibold sm:text-4xl">
@@ -203,6 +232,19 @@ const Service = () => {
           onSubmit={(e) => e.preventDefault()}
           className="space-y-5 border p-4 mt-10 rounded-md border-btnbrown"
         >
+          <div className="flex  flex-col items-center gap-y-5 gap-x-6 [&>*]:w-full sm:flex-row">
+            <div>
+              {/* <label className="font-medium">Last name</label> */}
+              <p className="text-btnbrown">
+                Please fill this form to discuss about the project! Once we
+                review your application we'll contact you as soon as possible
+                alternatly you can mail us on contact@crazychimps.tech NOTE: If
+                you looking to apply for job this is not the form you should
+                fill kindly refer link
+              </p>
+            </div>
+          </div>
+
           <div className="flex  flex-col items-center gap-y-5 gap-x-6 [&>*]:w-full sm:flex-row">
             <div>
               {/* <label className="font-medium">
@@ -247,7 +289,7 @@ const Service = () => {
 
             <div className="mt-2">
               <button
-                className="flex open_banana  items-center bg-primaryyellow justify-between w-full px-3 py-3 text-btnbrown  border-btnbrown border border-l-4 border-b-4 hover:border-l-0 hover:border-b-0 hover:border-r-4 hover:border-t-4 hover:ease-in-out duration-300  rounded-md shadow-sm cursor-default outline-none focus:border-indigo-600"
+                className="flex open_banana  items-center bg-primaryyellow justify-between w-full px-3 py-3 text-btnbrown  border-btnbrown border border-l-4 border-b-4 hover:border-l-0 hover:border-b-0 hover:border-r-4 hover:border-t-4 hover:ease-in-out duration-300  rounded-md shadow-sm cursor-default outline-none "
                 aria-haspopup="true"
                 aria-expanded="true"
                 onClick={() => setState(!state)}
@@ -347,18 +389,119 @@ const Service = () => {
               <input
                 type="text"
                 required
-                placeholder="Your Full Name"
+                placeholder="Platform/Blockchain Network"
                 className="w-full mt-2 px-3 py-3  outline-none  hover:border-t-4 hover:border-r-4  hover:border-b-0 hover:border-l-0 hover:ease-in-out duration-300 border-b-4 border-l-4 bg-primaryyellow border border-btnbrown placeholder-btnbrown shadow-sm rounded-md"
               />
             </div>
           </div>
+
+          <div className="flex  flex-col items-center gap-y-5 gap-x-6 [&>*]:w-full sm:flex-row">
+            <div>
+              {/* <label className="font-medium">
+                What is your Company/Buisness/Studio name ?
+              </label> */}
+              <input
+                type="number"
+                required
+                placeholder="Estimated Bugdet in $USD"
+                className="w-full mt-2 px-3 py-3  text-btnbrown outline-none  hover:border-t-4 hover:border-r-4  hover:border-b-0 hover:border-l-0 hover:ease-in-out duration-300 border-b-4 border-l-4 bg-primaryyellow border border-btnbrown placeholder-btnbrown shadow-sm rounded-md"
+              />
+            </div>
+
+            <div className="mt-2">
+              <button
+                className="flex open_banana  items-center bg-primaryyellow justify-between w-full px-3 py-3 text-btnbrown  border-btnbrown border border-l-4 border-b-4 hover:border-l-0 hover:border-b-0 hover:border-r-4 hover:border-t-4 hover:ease-in-out duration-300  rounded-md shadow-sm cursor-default outline-none "
+                aria-haspopup="true"
+                aria-expanded="true"
+                onClick={() => setStateOpen(!stateOpen)}
+              >
+                {selectedServiceItem.item || "Service You are looking"}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="w-6 h-6 text-btnbrown"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M8 9l4-4 4 4m0 6l-4 4-4-4"
+                  />
+                </svg>
+              </button>
+
+              {stateOpen ? (
+                <div className="relative w-full bg-primaryyellow">
+                  <ul
+                    className="absolute w-full mt-3 bg-white border  rounded-md shadow-sm"
+                    role="listbox"
+                  >
+                    <div className="max-h-64 mt-2 bg-primaryyellow overflow-y-auto ">
+                      {serviceItems.map((el, idx) => (
+                        <li
+                          key={idx}
+                          onClick={() => {
+                            setSelectedServiceItem({
+                              item: el,
+                              idx,
+                            });
+                            setState(false);
+                          }}
+                          role="option"
+                          className={`${
+                            setSelectedServiceItem.idx == idx
+                              ? "text-btnbrown bg-btnyellow"
+                              : ""
+                          } menu-el-js flex items-center justify-between open_banana px-3 cursor-default py-2 duration-150 text-btnbrown border-btnbrown  border rounded-md hover:text-btnbrown hover:bg-btnyellow`}
+                        >
+                          {el}
+                          {setSelectedServiceItem.idx == idx ? (
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              className="w-5 h-5 text-btnbrown"
+                              viewBox="0 0 20 20"
+                              fill="currentColor"
+                            >
+                              <path
+                                fillRule="evenodd"
+                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                clipRule="evenodd"
+                              />
+                            </svg>
+                          ) : (
+                            ""
+                          )}
+                        </li>
+                      ))}
+                    </div>
+                  </ul>
+                </div>
+              ) : (
+                ""
+              )}
+            </div>
+
+            <div>
+              {/* <label className="font-medium">Last name</label> */}
+              <input
+                type="text"
+                required
+                placeholder="Your Position in company"
+                className="w-full mt-2 px-3 py-3  outline-none  hover:border-t-4 hover:border-r-4  hover:border-b-0 hover:border-l-0 hover:ease-in-out duration-300 border-b-4 border-l-4 bg-primaryyellow border border-btnbrown placeholder-btnbrown shadow-sm rounded-md"
+              />
+            </div>
+          </div>
+
           <div>
             {/* <label className="font-medium">Email</label> */}
-            <input
+            <textarea
               type="email"
               required
-              placeholder="Email Address"
-              className="w-full mt-2 px-3 py-3  outline-none  hover:border-t-4 hover:border-r-4  hover:border-b-0 hover:border-l-0 hover:ease-in-out duration-300 border-b-4 border-l-4 bg-primaryyellow border border-btnbrown placeholder-btnbrown shadow-sm rounded-md"
+              placeholder="When is the Release date? How long would be the project; 
+               Do you have milestones set? Please elaborate the important dates per milestone."
+              className="w-full mt-2 px-3 py-3 resize-none h-40  outline-none  hover:border-t-4 hover:border-r-4  hover:border-b-0 hover:border-l-0 hover:ease-in-out duration-300 border-b-4 border-l-4 bg-primaryyellow border border-btnbrown placeholder-btnbrown shadow-sm rounded-md"
             />
           </div>
 
@@ -366,8 +509,20 @@ const Service = () => {
             {/* <label className="font-medium">Message</label> */}
             <textarea
               required
-              placeholder="Messege"
-              className="w-full mt-2 h-36 px-3 py-3 resize-none placeholder-btnbrown appearance-none border-btnbrown border-l-4 border-b-4 hover:border-l-0 hover:border-b-0 hover:border-t-4 hover:border-r-4 hover:ease-in-out duration-300 bg-primaryyellow outline-none border  shadow-sm rounded-md"
+              placeholder={`Can you provide a Project Design Document, Pitch Deck, or more information about the project requirements, scope, feild? 
+Please share the link to the document followed by the instruction below about the project
+Title Name: ABC title
+Feild: Defi
+
+Short Description: Please write a short description of the project
+
+Project Requirements: what are the main requirements of project
+1. Requirement 1 
+2. Requirement 2 
+3. Requirement 3 
+4. Requirement 4    
+              `}
+              className="w-full mt-2 h-40 px-3 py-3  placeholder-btnbrown appearance-none border-btnbrown border-l-4 border-b-4 hover:border-l-0 hover:border-b-0 hover:border-t-4 hover:border-r-4 hover:ease-in-out duration-300 bg-primaryyellow outline-none border  shadow-sm rounded-md"
             ></textarea>
           </div>
           <Link
