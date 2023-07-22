@@ -197,7 +197,7 @@ const Service = () => {
   };
 
   return (
-    <section className="py-14">
+    <section className="py-14 bg-primaryyellow">
       <div className="max-w-screen-xl mx-auto px-4 text-btnbrown md:px-8">
         <div className="relative max-w-2xl mx-auto sm:text-center">
           <div className="relative z-10">
@@ -292,7 +292,10 @@ const Service = () => {
                 className="flex open_banana  items-center bg-primaryyellow justify-between w-full px-3 py-3 text-btnbrown  border-btnbrown border border-l-4 border-b-4 hover:border-l-0 hover:border-b-0 hover:border-r-4 hover:border-t-4 hover:ease-in-out duration-300  rounded-md shadow-sm cursor-default outline-none "
                 aria-haspopup="true"
                 aria-expanded="true"
-                onClick={() => setState(!state)}
+                onClick={() => {
+                  setState(!state);
+                  setStateOpen(false);
+                }}
               >
                 {selectedItem.item || "Select a country"}
                 <svg
@@ -344,6 +347,7 @@ const Service = () => {
                         <li
                           key={idx}
                           onClick={() => {
+                            setStateOpen(false);
                             setSelectedItem({
                               item: el,
                               idx,
@@ -413,7 +417,10 @@ const Service = () => {
                 className="flex open_banana  items-center bg-primaryyellow justify-between w-full px-3 py-3 text-btnbrown  border-btnbrown border border-l-4 border-b-4 hover:border-l-0 hover:border-b-0 hover:border-r-4 hover:border-t-4 hover:ease-in-out duration-300  rounded-md shadow-sm cursor-default outline-none "
                 aria-haspopup="true"
                 aria-expanded="true"
-                onClick={() => setStateOpen(!stateOpen)}
+                onClick={() => {
+                  setStateOpen(!stateOpen);
+                  setState(false);
+                }}
               >
                 {selectedServiceItem.item || "Service You are looking"}
                 <svg
@@ -447,7 +454,7 @@ const Service = () => {
                               item: el,
                               idx,
                             });
-                            setState(false);
+                            setStateOpen(false);
                           }}
                           role="option"
                           className={`${
