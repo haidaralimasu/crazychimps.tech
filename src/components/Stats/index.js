@@ -37,7 +37,7 @@ const Stats = () => {
             {stat.map((item, idx) => (
               <li
                 key={idx}
-                className="w-full text-center bg-btnyellow border-btnbrown border-l-4 border-b-4 px-12 py-4 rounded-lg sm:w-auto"
+                className="w-full text-center bg-btnyellow border-btnbrown border border-l-4 border-b-4 px-12 py-4 rounded-lg sm:w-auto"
               >
                 <h4 className="text-4xl text-btnbrown font-semibold">
                   {item.data}

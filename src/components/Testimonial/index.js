@@ -43,7 +43,7 @@ const Testimonial = () => {
             {testimonials.map((item, idx) => (
               <li
                 key={idx}
-                className="bg-btnyellow border-btnbrown border-l-4 border-b-4 p-4  rounded-md"
+                className="bg-btnyellow border-btnbrown border-l-4 border-b-4 border p-4  rounded-md"
               >
                 <figure>
                   <div className="flex items-center gap-x-4">
