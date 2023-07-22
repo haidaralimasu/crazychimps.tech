@@ -4,3 +4,6 @@ export { default as HeroSection } from "./HeroSection";
 export { default as Faq } from "./Faq";
 export { default as Stats } from "./Stats";
 export { default as Testimonial } from "./Testimonial";
+export { default as AboutHome } from "./AboutHome";
+export { default as FeaturedBlog } from "./FeaturedBlog";
+export { default as NewsLetter } from "./NewsLetter";

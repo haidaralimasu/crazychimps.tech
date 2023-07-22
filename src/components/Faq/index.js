@@ -14,7 +14,7 @@ const FaqsCard = (props) => {
 
   return (
     <div
-      className="space-y-3 mt-5 overflow-hidden border-btnbrown border-l-4 border-b-4 rounded-md bg-btnyellow "
+      className="space-y-3 mt-5 overflow-hidden  border-btnbrown border-l-4 border-b-4 rounded-md bg-btnyellow "
       key={idx}
       onClick={handleOpenAnswer}
     >
@@ -180,7 +180,7 @@ const Faq = () => {
         <h1 className="text-3xl three_h text-gray-800 font-semibold">
           Frequently Asked Questions !
         </h1>
-        <p className="text-black max-w-lg mx-auto text-lg">
+        <p className="text-btnbrown max-w-lg mx-auto text-lg">
           Answered all frequently asked questions, Still confused? feel free to
           contact us.
         </p>
